@@ -110,11 +110,6 @@
             padding-bottom: 1.2em;
         }
 
-        .sunrise {
-            background: #0c091d;
-            color: #ffffff
-        }
-
         ul {
             margin: 0;
             padding-bottom: 1em;
@@ -136,9 +131,31 @@
             margin: auto;
         }
 
-        .night {
+        .midnight {
             background-color: black;
             color: white;
+        }
+
+        .five_am,
+        .ten_pm {
+            background: #0c091d;
+            color: #ffffff
+        }
+
+        .seven_am {
+            background: #131e3b;
+            color: #ffffff
+        }
+
+        .nine_thirty_am,
+        .five_pm {
+            background: #283e7a;
+            color: #ffffff
+        }
+
+        .noon {
+            background: #516cb4;
+            color: #ffffff
         }
 
         .headtext {
@@ -166,23 +183,29 @@
         <div class="content">
             <div class="">
                 <h1 style="color:#000000; background:#ffffff; padding: 10px;">One American Day</h1>
-                <p class="subhead" style="color:#000000; background:#ffffff; padding: 10px;">How the entire country spends an average 24-hour period, according to the data</p>
-                <div class="byline">
-                    <p style="color:#000000; background:#ffffff; padding: 10px;">By <a href="https://hgorledeenn.github.io" target="_blank">Holden Green</a></p>
-                </div>
+                <p class="subhead" style="color:#000000; background:#ffffff; padding: 10px;">How the entire country
+                    spends an average 24-hour period, according to the data
+                    <br>
+                    <br>
+                    By <a href="https://hgorledeenn.github.io" target="_blank">Holden Green</a>
+                </p>
             </div>
         </div>
     </div>
+    </div>
     <br><br>
     <div class="content">
-        <p>The below graphics show up to the top 5 named categories that Americans are engaged in at any given time.</p>
-        <p>Each square in one of the panels represents about 3.3 million Americans. All together, we see 8
-            snapshots of the most common activities are on a standard day in the US.</p>
+        <i>
+            <p>The below graphics show up to the top 5 named categories that Americans are engaged in at any given time.
+            </p>
+            <p><b>Each square in one of the panels represents about 3.3 million Americans.</b> All together, we see 8
+                snapshots of the most common activities Americans are engaged in on a standard day in the US.</p>
+        </i>
         <p>From midnight through a full day of work or leisure, let's break down what the data tells us.
         </p>
     </div>
     <br><br>
-    <div class="night">
+    <div class="midnight">
         <br>
         <div class="full-width">
             <figure>
@@ -192,25 +215,25 @@
         </div>
 
         <div class="content">
-            <p>I put the above in a <code>class="full-width"</code> so a larger image can span all the way across and
-                the h3
-                would be centered. It isn't necessary, but this image was wide and narrow so it made sense. If we had
-                used a
-                <code>class="content"</code> it would not go all the way across.
+            <p>It's midnight. The start of this individual, statistically average, American day.
             </p>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                rem
-                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                explicabo.
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            <p>It's quiet at midnight. More than 65% of the population (about 215 million people) are sleeping.</p>
+            <p>The next largest share of the population, about 20 million people, are washing or dressing themselves.
+                Another 13 million are engaged in some form of leisure activity, and about 10 million are eating or
+                drinking.</p>
+            <p>Only 3 million people – about 1% of the population or <b
+                    style="background: #ffffff; color: #000000; padding: 3px">one of the squares in the midnight box</b>
+                – is working right now.</p>
+            <p>The next largest share of the population, about 20 million people, are washing or dressing themselves.
+                Another 13 million are engaged in some form of leisure activity, and about 10 million are eating or
+                drinking.</p>
         </div>
     </div>
-    <div class="sunrise">
+    <div class="five_am">
         <br>
         <div class="full-width">
             <figure>
-                <h1><strong>5:00 AM</strong></h1>
+                <h1><strong>05:00 AM</strong></h1>
                 <img alt="southern states life expectancy" src="plots_for_site/3_5am.png">
             </figure>
         </div>
@@ -239,41 +262,156 @@
                 consequatur?</p>
         </div>
     </div>
+    <div class="seven_am">
+        <br>
+        <div class="full-width">
+            <figure>
+                <h1><strong>07:00 AM</strong></h1>
+                <img alt="southern states life expectancy" src="plots_for_site/4_7am.png">
+            </figure>
+        </div>
 
-    <div class="full-width">
-        <figure>
-            <h3>Here comes the West</h3>
-            <img alt="western states life expectancy" src="west.png">
-        </figure>
-    </div>
-
-    <div class="content">
-        <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
-            optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est,
-            omnis dolor repellendus.</p>
-    </div>
-
-    <div class="full-width">
-        <figure>
-            <h3>Northeast coming in strong</h3>
-            <img alt="northeastern states life expectancy" src="northeast.png">
-        </figure>
-    </div>
-
-    <div class="content">
-        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
-            atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
-            sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-        <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
-            optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est,
-            omnis dolor repellendus.</p>
-    </div>
-
-    <div class="footer">
         <div class="content">
-            <p>You can find the code for this template <a href="https://github.com/jsoma/page-templates/">here</a>.
-                Delete these lines
-                when you use it, and don't forget to change the <code>title</code> tag!!!</p>
+            <p>I put the above in a <code>class="full-width"</code> so a larger image can span all the way across and
+                the h3
+                would be centered. It isn't necessary, but this image was wide and narrow so it made sense. If we had
+                used a
+                <code>class="content"</code> it would not go all the way across.
+            </p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        </div>
+    </div>
+    <div class="nine_thirty_am">
+        <br>
+        <div class="full-width">
+            <figure>
+                <h1><strong>09:30 AM</strong></h1>
+                <img alt="southern states life expectancy" src="plots_for_site/5_930am.png">
+            </figure>
+        </div>
+
+        <div class="content">
+            <p>I put the above in a <code>class="full-width"</code> so a larger image can span all the way across and
+                the h3
+                would be centered. It isn't necessary, but this image was wide and narrow so it made sense. If we had
+                used a
+                <code>class="content"</code> it would not go all the way across.
+            </p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        </div>
+    </div>
+
+
+    <div class="noon">
+        <br>
+        <div class="full-width">
+            <figure>
+                <h1><strong>12:00 PM</strong></h1>
+                <img alt="southern states life expectancy" src="plots_for_site/6_12pm.png">
+            </figure>
+        </div>
+
+        <div class="content">
+            <p>I put the above in a <code>class="full-width"</code> so a larger image can span all the way across and
+                the h3
+                would be centered. It isn't necessary, but this image was wide and narrow so it made sense. If we had
+                used a
+                <code>class="content"</code> it would not go all the way across.
+            </p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        </div>
+    </div>
+
+
+    <div class="five_pm">
+        <br>
+        <div class="full-width">
+            <figure>
+                <h1><strong>05:00 PM</strong></h1>
+                <img alt="southern states life expectancy" src="plots_for_site/6_12pm.png">
+            </figure>
+        </div>
+
+        <div class="content">
+            <p>I put the above in a <code>class="full-width"</code> so a larger image can span all the way across and
+                the h3
+                would be centered. It isn't necessary, but this image was wide and narrow so it made sense. If we had
+                used a
+                <code>class="content"</code> it would not go all the way across.
+            </p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        </div>
+    </div>
+
+
+    <div class="ten_pm">
+        <br>
+        <div class="full-width">
+            <figure>
+                <h1><strong>10:00 PM</strong></h1>
+                <img alt="southern states life expectancy" src="plots_for_site/6_12pm.png">
+            </figure>
+        </div>
+
+        <div class="content">
+            <p>I put the above in a <code>class="full-width"</code> so a larger image can span all the way across and
+                the h3
+                would be centered. It isn't necessary, but this image was wide and narrow so it made sense. If we had
+                used a
+                <code>class="content"</code> it would not go all the way across.
+            </p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        </div>
+    </div>
+
+
+    <div class="midnight">
+        <br>
+        <div class="full-width">
+            <figure>
+                <h1><strong>12:00 AM</strong></h1>
+                <img alt="southern states life expectancy" src="plots_for_site/6_12pm.png">
+            </figure>
+        </div>
+
+        <div class="content">
+            <p>I put the above in a <code>class="full-width"</code> so a larger image can span all the way across and
+                the h3
+                would be centered. It isn't necessary, but this image was wide and narrow so it made sense. If we had
+                used a
+                <code>class="content"</code> it would not go all the way across.
+            </p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt.</p>
         </div>
     </div>
 </body>
