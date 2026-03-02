@@ -14,6 +14,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <style>
+        .with-image-bg,
+        .with-video-bg {
+            position: relative;
+            background-size: cover;
+            margin-bottom: 2em;
+
+            /* Center everything inside */
+            min-height: 100svh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            align-items: end;
+        }
+
+        .with-image-bg {
+            background-image: url('web-bg.gif');
+        }
+
+        .video-background {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .video-background video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
         body {
             margin: 0;
             font-size: 20px;
@@ -27,7 +60,7 @@
         }
 
         .header {
-            padding: 3em 0;
+            padding: 0 0;
         }
 
         a {
@@ -108,6 +141,12 @@
             color: white;
         }
 
+        .headtext {
+            color: #000000;
+            background: white;
+            padding: 10px;
+        }
+
         /* margin on mobile */
         @media (max-width: 640px) {
             body {
@@ -123,15 +162,18 @@
 </head>
 
 <body>
-    <div class="content">
-        <div class="header">
-            <h1>Headline</h1>
-            <p class="subhead">Subhead</p>
-        </div>
-        <div class="byline">
-            <p>By <a href="https://hgorledeenn.github.io">Holden Green</a></p>
+    <div class="header with-image-bg">
+        <div class="content">
+            <div class="headtext">
+                <h1>One American Day</h1>
+                <p class="subhead">How the entire country spends an average 24-hour period, according to the data</p>
+                <div class="byline">
+                    <p>By <a href="https://hgorledeenn.github.io">Holden Green</a></p>
+                </div>
+            </div>
         </div>
     </div>
+
     <div class="full-width">
         <figure>
             <h3>How the US spends its time</h3>
