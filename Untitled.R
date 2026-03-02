@@ -365,3 +365,11 @@ for (id in bin_ids) {
   
   ggsave(paste0("~/Desktop/CJS/0126data_studio/project-2-atus/waffle plots/waffle_bin_", id, "_", individual_start_time, ".png"), plot=p, width = 6, height = 6, units = "in") 
 }
+
+for_looking <- top5_wide %>%
+  select(bin_start_time, activity_1, percent_1)
+
+for_looking %>%
+  ggplot() +
+  aes(x=bin_start_time, y=percent_1, color=activity_1) +
+  geom_point()
