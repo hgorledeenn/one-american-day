@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>One American Day</title>
+    <link rel="icon" type="image/gif" href="plots_only.gif">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-rendering: optimizeLegibility;
+        }
+
+        .content {
+            max-width: 640px;
+            margin: auto;
+        }
+
+        .header {
+            padding: 3em 0;
+        }
+
+        a {
+            color: #f05349;
+        }
+
+        .footer {
+            background: #f4f4f4;
+            text-align: center;
+            font-size: 0.8em;
+            margin-top: 4em;
+            padding: 4em 0;
+        }
+
+        figure {
+            margin: 0;
+            padding-bottom: 1.2em;
+        }
+
+        figcaption {
+            font-size: 0.8em;
+            text-align: center;
+            margin-top: 0.5em;
+            color: #666;
+        }
+
+        h1 {
+            font-family: 'Lora', Georgia, serif;
+            font-weight: bold;
+            font-size: 3em;
+            line-height: 1.1;
+        }
+
+        .subhead {
+            font-family: 'Lora', Georgia, serif;
+        }
+
+        iframe,
+        img,
+        video {
+            max-width: 100%;
+        }
+
+        p {
+            line-height: 1.6;
+            margin: 0;
+            padding-bottom: 1.2em;
+        }
+
+        .sunrise {
+            background: #0c091d;
+            color: #ffffff
+        }
+
+        ul {
+            margin: 0;
+            padding-bottom: 1em;
+            line-height: 1.6;
+        }
+
+        iframe {
+            padding-bottom: 1.2em;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            background: #fff880;
+        }
+
+        .full-width figure {
+            text-align: center;
+            width: 80%;
+            margin: auto;
+        }
+
+        .night {
+            background-color: black;
+            color: white;
+        }
+
+        /* margin on mobile */
+        @media (max-width: 640px) {
+            body {
+                font-size: 18px;
+            }
+
+            .content {
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+            <h1>Headline</h1>
+            <p class="subhead">Subhead</p>
+        </div>
+        <div class="byline">
+            <p>By <a href="https://hgorledeenn.github.io">Holden Green</a></p>
+        </div>
+    </div>
+    <div class="full-width">
+        <figure>
+            <h3>How the US spends its time</h3>
+            <img src="plots_for_site/1_all_bright.png">
+        </figure>
+    </div>
+    <div class="content">
+        <p>The above graphic shows up to the top 5 named categories that Americans are engaged in at any given time.</p>
+
+        <p>Each square in one of the above panels represents about 3.3 million Americans. All together, we see 8
+            snapshots of the most common activities are on a standard day in the US.</p>
+        <p>From midnight through a full day of work or leisure, let's break down what the data tells us.
+        </p>
+
+    </div>
+    <div class="night">
+        <br>
+        <div class="full-width">
+            <figure>
+                <h1><strong>12:00 AM</strong></h1>
+                <img alt="southern states life expectancy" src="plots_for_site/2_12am.png">
+            </figure>
+        </div>
+
+        <div class="content">
+            <p>I put the above in a <code>class="full-width"</code> so a larger image can span all the way across and
+                the h3
+                would be centered. It isn't necessary, but this image was wide and narrow so it made sense. If we had
+                used a
+                <code>class="content"</code> it would not go all the way across.
+            </p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem
+                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo.
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        </div>
+    </div>
+    <div class="sunrise">
+        <br>
+        <div class="full-width">
+            <figure>
+                <h1><strong>5:00 AM</strong></h1>
+                <img alt="southern states life expectancy" src="plots_for_site/3_5am.png">
+            </figure>
+        </div>
+
+        <div class="content">
+            <p>Again, look at the HTML to notice how we're cycling between <code>full-width</code> and
+                <code>content</code>.
+            </p>
+            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+                non
+                numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad
+                minima
+                veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+                consequatur?</p>
+            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+                non
+                numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad
+                minima
+                veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+                consequatur?</p>
+            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+                non
+                numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad
+                minima
+                veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+                consequatur?</p>
+        </div>
+    </div>
+
+    <div class="full-width">
+        <figure>
+            <h3>Here comes the West</h3>
+            <img alt="western states life expectancy" src="west.png">
+        </figure>
+    </div>
+
+    <div class="content">
+        <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+            optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est,
+            omnis dolor repellendus.</p>
+    </div>
+
+    <div class="full-width">
+        <figure>
+            <h3>Northeast coming in strong</h3>
+            <img alt="northeastern states life expectancy" src="northeast.png">
+        </figure>
+    </div>
+
+    <div class="content">
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+            atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
+            sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+        <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+            optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est,
+            omnis dolor repellendus.</p>
+    </div>
+
+    <div class="footer">
+        <div class="content">
+            <p>You can find the code for this template <a href="https://github.com/jsoma/page-templates/">here</a>.
+                Delete these lines
+                when you use it, and don't forget to change the <code>title</code> tag!!!</p>
+        </div>
+    </div>
+</body>
+
+</html>
