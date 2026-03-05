@@ -46,7 +46,7 @@ df_act <- df_act %>%
   mutate(end_since_midnight = (end_hour*60)+(end_minute)+(end_second/60))
 
 
-bin_length <- 30   # half-hour, change to 60 for hourly
+bin_length <- 30
 bin_starts <- seq(0, 1440 - bin_length, by = bin_length)
 bins <- data.frame(
   bin_id = seq_along(bin_starts),
