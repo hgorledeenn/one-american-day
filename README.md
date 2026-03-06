@@ -12,7 +12,8 @@ Columbia Journalism School, Data Studio
 2. [Data Wrangling and Visualization](#data-wrangling-and-visualization)
 3. [Web Design](#web-design)
 4. [What I Would Change for Next Time](#what-i-would-change-for-next-time)
-5. [header 5](#)
+
+<br>
 
 ## The Project
 This story analyzes data from the 2024 American Community Survey, a topic I found from [this video](https://www.youtube.com/watch?v=04EfRggPL-M) from Chris Spargo. I analyzed the data in R, which included extensive exploratory data analysis and wrangling.
@@ -30,11 +31,13 @@ This project was my first foray into making [waffle charts](/plots_for_site/1_al
 <img src="to_make_into_viz/waffle_bin_45_10:00 PM.png" width=30%>
 </p>
 
-I found the top 5 activities (by % of people engaged in them) for every 30-minute interval starting at 12:00am. Once I had these results, I decided on groups for the individual activities to make the final visualizations cleaner (*eg. instead of one **computer use** category and one **watching tv** category, I made a **leisure** category*).
+I found the top 5 activities (by % of people engaged in them) for every 30-minute interval starting at 12:00am. Once I had these results, I decided on groups for the individual activities to make the final visualizations cleaner (*eg. instead of one `computer use` category and one `watching tv` category, I made a `leisure` category*).
 
 I was working with the activity data as reported by survey respondents, which does not fall neatly into 30 minute increments. Because of this, I had to think through how to most accurately group data into my neat bins for analysis and visualization.
 
-I ultimately decided to simply calculate the overlap of each activity for each bin (which included learning the helpful `tidyr::crossing` command to make every combination of my `bins` and `activity` dataframes) and assign the single activity that took up the majority of a given bin to that entire bin for that respondent.
+I ultimately decided to simply calculate the overlap of each activity for each bin and assign the single activity that took up the largest share of a given bin to that entire bin for that respondent.
+
+This included learning the helpful `tidyr::crossing` command to make every combination of my `bins` and `activity` dataframes, and I then was able to calculate overlap and assign bins with `slice_max` after grouping by the `user id` and `bin id`.
 
 ```R
 ## Creating every combination of activities and bins
@@ -63,13 +66,17 @@ I had a lot of fun with the design of the website for this project. Because I wa
 
 To add to the visual cues, I assigned simple background colors via css classes like `.midnight` and `.seven-am`.
 
-I used [coolors.co](coolors.co) to check the accessibilty of my color choices (especially as I started using lighter blue shades for midday sections).
+I used the **[coolors.co contrast checker](https://coolors.co/contrast-checker/112a46-acc8e5)** to ensure the accessibilty of my color choices (especially as I started using lighter blue shades for midday sections).
 
-I also created the animation of my waffle plots to show how they changed throughout the day, which lent itself nicely to my header and footer sections. I learned about `svh` in css formatting, which allowed me to ensure that my header title card/animation fills the entire screen, no matter the size or orientation of the screen.
+I also created the [gif animation](/web-bg.gif) of my waffle plots to show how they changed throughout the day, which lent itself nicely to my header and footer sections. I learned about `svh` in css formatting, which allowed me to ensure that my header title card/animation fills the entire screen, no matter the size or orientation of the screen.
 
 <br>
 
 ## What I Would Change for Next Time
-For future similar projects, I think it might be interesting to add an interactive component to the site (eg. respondents can input an activity they do and when they do it and can see how common it is).
+For similar future projects, I think it would be interesting to add an interactive component to the site (eg. readers can input an activity the time they do it and can see how common it is).
+
+Also, I made the line of waffle plots in Photoshop after exporting individual plots from R, and I made clear which plot was in focus for a gien section by making the other plots in grayscale.
+
+In the future, I'd likely use something like `ai2html` to animate the plots so, for each section, the plot I was referencing could appear bigger or I could otherwise draw attention to it in a way that also improved readability of that plot and comparison across time to the other plots.
 
 I also was somewhat short on time before the deadline, but I would have loved to do a more in-depth analysis to find even more interesting findings. For instance, maybe a story about the most common times to eat dinner across the US, or presenting the data in the more granular categories it started as.
